@@ -143,12 +143,13 @@ nav {
 /*==================== Banner ====================*/
 
 .banner__section {
-  margin-top: 5.7vh;
+  margin-top: 5.3vh;
   height: 200px;
 }
 
 .swiper-slide img {
   height: 200px;
+  width: 100vw;
 }
 
 /* swiper customization */
