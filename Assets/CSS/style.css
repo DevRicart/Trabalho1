@@ -74,6 +74,8 @@ nav {
 
   width: 45px;
   height: 45px;
+
+  cursor: pointer;
 }
 
 .mobile-menu div {
@@ -158,6 +160,7 @@ nav {
 }
 
 /*==================== MAIN ====================*/
+/*==================== SHOPPING ====================*/
 .shopping__section {
   margin-top: 2rem;
   text-align: center;
@@ -228,4 +231,45 @@ nav {
 .shopping div a {
   font-family: 'Bebas';
   font-size: 10px;
+}
+
+/*==================== ENCARTE ====================*/
+.encarte__section {
+  display: block;
+  background-color: #08A8F0;
+
+  margin-top: 2rem;
+  height: 40rem;
+}
+
+.encarte__section h1 {
+  font-family: 'Bebas';
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+}
+
+.encarte__section .swiper-pagination-bullet {
+  display: none;
+} 
+
+.mySwiperDois {
+  width: 80vw;
+}
+
+.swiper-slide .encarte-img {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+.swiper-wrapper .swiper-slide {
+  width: 100px;
+}
+
+.encarte__description {
+  background-color: #EF009B;
+  width: 76px;
+  height: 24px;
 }
