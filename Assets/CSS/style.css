@@ -107,7 +107,6 @@ nav {
     margin-left: 0;
     opacity: 0;
   }
-  
 }
 
 .nav-list.active {
@@ -144,12 +143,13 @@ nav {
 /*==================== Banner ====================*/
 
 .banner__section {
-  margin-top: 5.8vh;
+  margin-top: 5.3vh;
   height: 200px;
 }
 
 .swiper-slide img {
   height: 200px;
+  width: 100vw;
 }
 
 /* swiper customization */
