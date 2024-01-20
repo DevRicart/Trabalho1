@@ -69,9 +69,9 @@ mobileNavbar.init();
     },
   });
 
-  var swiper = new Swiper(".mySwiper-dois", {
-    slidesPerView: 3,
-    spaceBetween: 1,
+  var swiper = new Swiper(".mySwiperDois", {
+    slidesPerView: 2,
+    spaceBetween: 0,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -81,6 +81,29 @@ mobileNavbar.init();
       prevEl: ".swiper-button-prev",
     },
   });
+
+  // var swiper = new Swiper(".mySwiper-dois", {
+  //   slidesPerView: 2,
+  //   spaceBetween: 1,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  //   breakpoints: {
+  //     576: {
+  //       slidesPerView: 2, // Mostrar 1 slide quando a largura da tela for 576 pixels ou mais
+  //     },
+  //     768: {
+  //         slidesPerView: 3, // Mostrar 2 slides quando a largura da tela for 768 pixels ou mais
+  //     },
+      
+  //     // Adicione mais breakpoints conforme necessário
+  // }
+  // });
 
 
 
