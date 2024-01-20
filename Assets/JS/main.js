@@ -70,8 +70,8 @@ mobileNavbar.init();
   });
 
   var swiper = new Swiper(".mySwiper-dois", {
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 1,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

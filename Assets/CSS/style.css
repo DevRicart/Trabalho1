@@ -251,11 +251,16 @@ nav {
 }
 
 .mySwiper-dois {
-  width: 80vw;
+  width: 90vw;
+}
+
+.mySwiper-dois .swiper-pagination {
+  display: none;
 }
 
 .slide-1 {
   margin-left: 50px;
+  width: 100px !important; 
 }
 
 .encarte-item {
