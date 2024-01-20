@@ -145,11 +145,11 @@ nav {
 /*==================== Banner ====================*/
 
 .banner__section {
-  margin-top: 5.3vh;
+  margin-top: 4.2vh;
   height: 200px;
 }
 
-.swiper-slide img {
+.banner__section .swiper-slide img {
   height: 200px;
   width: 100vw;
 }
@@ -232,145 +232,149 @@ nav {
   font-family: 'Bebas';
   font-size: 10px;
 }
-/*==================== buttons prev/next ====================*/
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: '';
-}
-
-.swiper-icon {
-  font-size: 2rem;
-  color: white;
-}
-
-.swiper-button-prev {
-  left: -.5rem;
-}
-
-.swiper-button-next {
-  right: -.5rem;
-}
 /*==================== ENCARTE ====================*/
 
 .encarte__section {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   background-color: #08A8F0;
-  margin-top: 10px;
-  height: 1000px;
-}
-
-.encarte__section2 {
-  width: 80vw;
-}
-
-.encarte__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 117px;
-  height: 140px;
-  
-}
-
-.swiper-slide-active {
-  padding-left: 1.5rem;
-}
-
-.swiper-slide-next {
-  padding-right: 1.5rem;
-}
-
-.encarte__bg {
-  background-color: white;
-}
-
-.encarte-img {
-  width: 60px !important;
-  height: 90px !important;
-}
-
-.encarte__data {
-  background-color: #F00879;
-  color: white;
-  padding: 5px 10px 10px 5px;
-}
-
-.product__title {
-  font-size: 8px;
-}
-
-.product__cod {
-  font-size: 4px;
-}
-
-/* .encarte__section {
-  display: block;
-  background-color: #08A8F0;
-
   margin-top: 2rem;
-  height: 40rem;
+  height: 1000px;
 }
 
 .encarte__section h1 {
   font-family: 'Bebas';
-  font-size: 24px;
-  text-align: center;
   color: white;
-  padding-top: 2rem;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.mySwiper-dois {
-  width: 90vw;
+/*==================== FUNCIONAAAA ====================*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.mySwiper-dois .swiper-pagination {
-  display: none;
-}
-
-.swiper-wrapper {
-  width: 100px !important; 
-}
-
-.slide-1 {
-  margin-left: 50px;
-  width: 100px !important; 
-}
-
-.swiper-slide {
-  width: 100px !important;
-}
-
-.encarte-item {
+/*=============== CARD ===============*/
+.container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 76px;
-  height: fit-content;
+  height: 100vh;
+}
+
+/* .card__container {
+  padding-block: 5rem;
+} */
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__article {
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__image {
+  position: relative;
+  background-color: white;
+  padding-top: 1.5rem;
+  margin-bottom: -.75rem;
+}
+
+.card__data {
+  background-color: #EF009B;
+  padding: 1.5rem 2rem;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+.card__img {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.card__name {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: .75rem;
+}
+
+.card__description {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+  color: white;
+}
+
+
+/* Swiper class */
+.card__container .swiper-button-prev:after,
+.card__container .swiper-button-next:after {
+  content: "";
+}
+
+.card__container .swiper-button-prev,
+.card__container .swiper-button-next {
+  font-size: 3rem;
+  color: white;
+
+}
+
+.card__container .swiper-button-prev {
+  left: 0;
+}
+
+.card__container .swiper-button-next {
+  right: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(212, 32%, 40%);
+  opacity: 1;
+
+}
+
+.swiper-pagination-bullet-active {
   background-color: white;
 }
 
-.encarte-item img {
-  width: 56px;
-  height: 75px;
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
 }
 
-.encarte-item div {
-  background-color: #EF009B;
-  width: 76px;
-  padding: 5px 5px 10px 5px;
-  color: white;
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+
+  .card__container .swiper-button-next,
+  .card__container .swiper-button-prev {
+    display: block;
+  }
 }
 
-.encarte-item div h4 {
-  font-family: 'Bebas';
-  font-size: 8px;
-  display: block;
-}
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .card__container {
+    max-width: 1120px;
+  }
 
-.encarte-item div span {
-  font-family: 'Bebas';
-  font-size: 4px;
-  display: block;
-} */
+  .card__container .swiper-button-prev {
+    left: -1rem;
+  }
+  .card__container .swiper-button-next {
+    right: -1rem;
+  }
+}
