@@ -69,35 +69,17 @@ mobileNavbar.init();
     },
   });
 
-
-  var mySwiperDois = new Swiper('.mySwiperDois', {
+  var swiper = new Swiper(".mySwiper-dois", {
     slidesPerView: 4,
     spaceBetween: 30,
-    navigation: {
-      nextEl: '.mySwiperDois-next',
-      prevEl: '.mySwiperDois-prev',
-    },
     pagination: {
-      el: '.swiper-pagination-dois',
+      el: ".swiper-pagination",
       clickable: true,
     },
-  });
-
-
-  document.querySelector('.mySwiperDois-next').addEventListener('click', function() {
-    // Obtém o índice do último slide
-    var lastIndex = mySwiperDois.slides.length - 1;
-    // Define o índice de destino para os 4 últimos slides
-    var targetIndex = lastIndex - 3; // 4 slides a partir do final
-    // Navega para o slide de destino
-    mySwiperDois.slideTo(targetIndex);
-  });
-
-  document.querySelector('.mySwiperDois-prev').addEventListener('click', function() {
-    // Define o índice de destino para os 4 primeiros slides
-    var targetIndex = 0;
-    // Navega para o slide de destino
-    mySwiperDois.slideTo(targetIndex);
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
 
