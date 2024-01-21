@@ -49,7 +49,7 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-//  Initialize Swiper 
+// ==================== Banner Swiper ====================
 
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
@@ -69,10 +69,12 @@ mobileNavbar.init();
     },
   });
 
-  let swiperCards = new Swiper(".card__content", {
+// ==================== Encarte Swiper ====================
+  let swiperCards = new Swiper(".card__container", {
     loop: true,
-    spaceBetween: 32,
-    grabCursor: true,
+    spaceBetween: 5,
+    slidesPerView: 2,
+    cssMode: true,
   
     pagination: {
       el: ".swiper-pagination",
@@ -87,10 +89,33 @@ mobileNavbar.init();
   
     breakpoints:{
       600: {
-        slidesPerView: 2,
+        slidesPerView: 3,
+        spaceBetween: 30,
       },
       968: {
         slidesPerView: 3,
+        spaceBetween: 30,
       },
     },
   });
+
+// ==================== Trade Swiper ====================
+
+let swiperTrade = new Swiper(".trade__swiper", {
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

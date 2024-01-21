@@ -29,6 +29,11 @@
   list-style: none;
 }
 
+.section__title {
+  font-family: 'Bebas';
+  font-size: 1.5rem;
+}
+
 /*==================== Nav ====================*/
 
 a {
@@ -236,9 +241,11 @@ nav {
 
 .encarte__section {
   text-align: center;
-  background-color: #08A8F0;
+  background: linear-gradient(#08A8F0, #08A8F0, #08A8F0, #08A9F0, #08AAF1, #08ABF1, #08ABF1, #08ACF1, #09ADF2, #09AEF2, #09AFF2, #09B0F2, #09B1F3, #09B1F3, #09B2F3, #09B3F3, #09B4F4, #09B5F4, #09B6F4, #09B6F4, #0AB7F5, #0AB8F5, #0AB9F5, #0ABAF5, #0ABBF6, #0ABCF6, #0ABCF6, #0ABDF6, #0ABEF7, #0ABFF7, #0AC0F7, #0AC1F7, #0BC1F8, #0BC2F8, #0BC3F8, #0BC4F8, #0BC5F9, #0BC6F9, #0BC7F9, #0BC7F9, #0BC8FA, #0BC9FA, #0BCAFA, #0BCBFA, #0CCCFB, #0CCCFB, #0CCDFB, #0CCEFB, #0CCFFC, #0CD0FC, #0CD1FC, #0CD2FC, #0CD2FD, #0CD3FD, #0CD4FD, #0CD5FD, #0DD6FE, #0DD7FE, #0DD7FE, #0DD8FE, #0DD9FF, #0DDAFF, #0DDAFF);
   margin-top: 2rem;
-  height: 1000px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 .encarte__section h1 {
@@ -249,53 +256,45 @@ nav {
   padding-bottom: 1rem;
 }
 
-/*==================== FUNCIONAAAA ====================*/
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.encarte__section .swiper {
+	height: 350px;
 }
 
-/*=============== CARD ===============*/
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.encarte__section .swiper-slide {
+	height: fit-content;
 }
 
-/* .card__container {
-  padding-block: 5rem;
-} */
-
-.card__content {
-  margin-inline: 1.75rem;
-  border-radius: 1.25rem;
-  overflow: hidden;
+.encarte__section .swiper-wrapper,
+.trade__section .trade__swiper {
+  width: 90vw;
 }
 
 .card__article {
   border-radius: 1.25rem;
   overflow: hidden;
+  background-color: white;
+  transition: transform 0.3s ease;
 }
 
 .card__image {
   position: relative;
-  background-color: white;
   padding-top: 1.5rem;
   margin-bottom: -.75rem;
 }
 
+
 .card__data {
   background-color: #EF009B;
-  padding: 1.5rem 2rem;
+  padding: .5rem 0px 1.2rem 1rem;
   text-align: left;
   position: relative;
   z-index: 10;
 }
 
+
 .card__img {
-  width: 180px;
+  width: 120px;
+  padding-bottom: 1rem;
   margin: 0 auto;
   position: relative;
   z-index: 5;
@@ -303,13 +302,12 @@ img {
 
 .card__name {
   font-size: 1.5rem;
+  font-family: "Bebas";
   color: white;
-  margin-bottom: .75rem;
 }
 
 .card__description {
-  font-weight: 500;
-  margin-bottom: 1.75rem;
+  font-family: 'Bebas';
   color: white;
 }
 
@@ -323,12 +321,13 @@ img {
 .card__container .swiper-button-prev,
 .card__container .swiper-button-next {
   font-size: 3rem;
-  color: white;
-
+  color: #005794;
 }
+
 
 .card__container .swiper-button-prev {
   left: 0;
+
 }
 
 .card__container .swiper-button-next {
@@ -345,7 +344,160 @@ img {
   background-color: white;
 }
 
-/*=============== BREAKPOINTS ===============*/
+article:hover .card__data {
+  background-color: black;
+}
+
+article:hover .card__name {
+  color: blue;
+}
+.card__article:hover {
+  height: 300px ;
+}
+
+/*==================== TRADE ====================*/
+.trade__section {
+  text-align: center;
+  margin-top: 2rem;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+.trade__section .section__title {
+  color: #005794;
+}
+
+.trade__section h2 {
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-weight: 400;
+  color: #005794;
+  margin-bottom: 2rem;
+}
+
+.trade__section .trade__content {
+  height: fit-content;
+  padding-bottom: 2rem;
+}
+
+
+.trade__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
+}
+
+.trade__img {
+  width: 121px;
+}
+
+.trade__information {
+  width: 200px;
+}
+
+
+.trade__swiper .swiper-button-prev:after,
+.trade__swiper .swiper-button-next:after {
+  content: "";
+}
+
+.trade__swiper .swiper-button-prev,
+.trade__swiper .swiper-button-next {
+  font-size: 3rem;
+  color: #005794;
+
+}
+
+.trade__swiper .swiper-button-prev {
+  left: 0;
+}
+
+.trade__swiper .swiper-button-next {
+  right: 0;
+}
+
+/*==================== SUBSCRIBE ====================*/
+.subscribe__section {
+  background: linear-gradient(#08A8F0, #08A8F0, #08A8F0, #08A9F0, #08AAF1, #08ABF1, #08ABF1, #08ACF1, #09ADF2, #09AEF2, #09AFF2, #09B0F2, #09B1F3, #09B1F3, #09B2F3, #09B3F3, #09B4F4, #09B5F4, #09B6F4, #09B6F4, #0AB7F5, #0AB8F5, #0AB9F5, #0ABAF5, #0ABBF6, #0ABCF6, #0ABCF6, #0ABDF6, #0ABEF7, #0ABFF7, #0AC0F7, #0AC1F7, #0BC1F8, #0BC2F8, #0BC3F8, #0BC4F8, #0BC5F9, #0BC6F9, #0BC7F9, #0BC7F9, #0BC8FA, #0BC9FA, #0BCAFA, #0BCBFA, #0CCCFB, #0CCCFB, #0CCDFB, #0CCEFB, #0CCFFC, #0CD0FC, #0CD1FC, #0CD2FC, #0CD2FD, #0CD3FD, #0CD4FD, #0CD5FD, #0DD6FE, #0DD7FE, #0DD7FE, #0DD8FE, #0DD9FF, #0DDAFF, #0DDAFF);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.titles {
+  font-family: 'Bebas';
+  color: white;
+  margin-bottom: 15px;
+}
+
+.principal-title {
+  font-weight: 300;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  margin-right: 5px;
+}
+
+.input-group input[type="text"] {
+  margin-right: 0;
+}
+
+input {
+  border: 2px solid #EF009B;
+  height: 2rem;
+  outline: none;
+  font-family: 'Bebas';
+  color: white;
+  padding: .2rem;
+}
+
+.email {
+  background: none;
+  border-radius: .3rem 0 0 .3rem;
+}
+
+.email::placeholder {
+  color: white;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: #EF009B;
+  border-radius: 0 .3rem .3rem 0;
+  font-size: 1.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== RESPONSIVE ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
   .card__data {
