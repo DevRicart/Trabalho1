@@ -100,7 +100,7 @@ nav {
     top: 8vh;
     left: 0;
     width: 40vw;
-    height: 10000px;
+    height: 100vh;
     background: #08A8F0;
     flex-direction: column;
     align-items: center;
@@ -150,12 +150,13 @@ nav {
 /*==================== Banner ====================*/
 
 .banner__section {
-  margin-top: 4.2vh;
-  height: 200px;
+
+  margin-top: 6vh;
+  height: fit-content;
 }
 
 .banner__section .swiper-slide img {
-  height: 200px;
+  height: 100%;
   width: 100vw;
 }
 
@@ -193,8 +194,8 @@ nav {
   align-items: center;
   background-color: #08A8F0;
   color: white;
-  max-width: 160px;
-
+  width: 170px;
+  height: 260px;
   padding: 30px 10px 15px;
 
 }
@@ -204,54 +205,55 @@ nav {
 }
 
 .online img {
-  width: 60px;
-  height: 42px;
+  width: 80px;
+  height: 60px;
 }
 
+
 .in-person img {
-  width: 27px;
-  height: 42px;
+  width: 35px;
+  height: 50px;
 }
 
 .shopping h3 {
   font-family: 'Bebas';
-  font-size: 14px;
+  font-size: 1.5rem;
 }
 
 .shopping p {
   font-family: 'Poppins', sans-serif;
-  font-size: 7px;
+  font-size: .8rem;
   margin-bottom: 20px;
 }
 
-.shopping div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #F00879;
-  border-radius: 3px;
-  width: 50px;
-  height: 16px;
+.online p {
+  margin-bottom: 33px;
 }
 
-.shopping div a {
+.shopping a {
   font-family: 'Bebas';
-  font-size: 10px;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  background-color: #F00879;
+  padding: 5px 8px;
 }
 /*==================== ENCARTE ====================*/
 
 .encarte__section {
   text-align: center;
-  background: linear-gradient(#08A8F0, #08A8F0, #08A8F0, #08A9F0, #08AAF1, #08ABF1, #08ABF1, #08ACF1, #09ADF2, #09AEF2, #09AFF2, #09B0F2, #09B1F3, #09B1F3, #09B2F3, #09B3F3, #09B4F4, #09B5F4, #09B6F4, #09B6F4, #0AB7F5, #0AB8F5, #0AB9F5, #0ABAF5, #0ABBF6, #0ABCF6, #0ABCF6, #0ABDF6, #0ABEF7, #0ABFF7, #0AC0F7, #0AC1F7, #0BC1F8, #0BC2F8, #0BC3F8, #0BC4F8, #0BC5F9, #0BC6F9, #0BC7F9, #0BC7F9, #0BC8FA, #0BC9FA, #0BCAFA, #0BCBFA, #0CCCFB, #0CCCFB, #0CCDFB, #0CCEFB, #0CCFFC, #0CD0FC, #0CD1FC, #0CD2FC, #0CD2FD, #0CD3FD, #0CD4FD, #0CD5FD, #0DD6FE, #0DD7FE, #0DD7FE, #0DD8FE, #0DD9FF, #0DDAFF, #0DDAFF);
+  background: linear-gradient(#08A8F0, #08A8F0, #08A8F0, #08A9F0, #08AAF1, #08ABF1, #08ABF1, #08ACF1, #09ADF2, #09AEF2, #09AFF2, #09B0F2, #09B1F3, #09B1F3, #09B2F3, #09B3F3, #09B4F4, #09B5F4, #09B6F4, #09B6F4, #0AB7F5, #0AB8F5,
+  #0AB9F5, #0ABAF5, #0ABBF6, #0ABCF6, #0ABCF6, #0ABDF6, #0ABEF7, #0ABFF7, #0AC0F7, #0AC1F7, #0BC1F8, #0BC2F8,
+    #0BC3F8, #0BC4F8, #0BC5F9, #0BC6F9, #0BC7F9, #0BC7F9, #0BC8FA, #0BC9FA, #0BCAFA, #0BCBFA, #0CCCFB, #0CCCFB,
+     #0CCDFB, #0CCEFB, #0CCFFC, #0CD0FC, #0CD1FC, #0CD2FC, #0CD2FD, #0CD3FD, #0CD4FD, #0CD5FD, #0DD6FE, #0DD7FE,
+      #0DD7FE, #0DD8FE, #0DD9FF, #0DDAFF, #0DDAFF);
   height: 450px;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .encarte__section h1 {
   font-family: 'Bebas';
-  color: white;
   font-size: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -283,6 +285,13 @@ nav {
   margin-bottom: -.75rem;
 }
 
+.card__img {
+  width: 120px;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
 
 .card__data {
   background-color: #EF009B;
@@ -292,24 +301,34 @@ nav {
   z-index: 10;
 }
 
-
-.card__img {
-  width: 120px;
-  padding-bottom: 1rem;
-  margin: 0 auto;
-  position: relative;
-  z-index: 5;
-}
-
 .card__name {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: "Bebas";
-  color: white;
 }
 
 .card__description {
   font-family: 'Bebas';
-  color: white;
+}
+
+.card__buy {
+  margin-top: 20px;
+}
+
+.card__buy span {
+  font-family: 'Bebas';
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.card__buy a {
+  font-weight: 700;
+  background: linear-gradient(#08A8F0, #08A8F0, #08A8F0, #08A9F0, #08AAF1, #08ABF1, #08ABF1, #08ACF1, #09ADF2, #09AEF2, #09AFF2, #09B0F2, #09B1F3, #09B1F3, #09B2F3, #09B3F3, #09B4F4, #09B5F4, #09B6F4, #09B6F4, #0AB7F5, #0AB8F5,
+  #0AB9F5, #0ABAF5, #0ABBF6, #0ABCF6, #0ABCF6, #0ABDF6, #0ABEF7, #0ABFF7, #0AC0F7, #0AC1F7, #0BC1F8, #0BC2F8,
+  #0BC3F8, #0BC4F8, #0BC5F9, #0BC6F9, #0BC7F9, #0BC7F9, #0BC8FA, #0BC9FA, #0BCAFA, #0BCBFA, #0CCCFB, #0CCCFB,
+  #0CCDFB, #0CCEFB, #0CCFFC, #0CD0FC, #0CD1FC, #0CD2FC, #0CD2FD, #0CD3FD, #0CD4FD, #0CD5FD, #0DD6FE, #0DD7FE,
+  #0DD7FE, #0DD8FE, #0DD9FF, #0DDAFF, #0DDAFF);
+  padding: 10px;
+  border-radius: .3rem;
 }
 
 
@@ -540,11 +559,17 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin-top: 1rem;
+  color: #005794;
+  font-family: 'Bebas';
+  font-size: 14px;
+  padding-bottom: 1rem;
 }
 
-.stick {
-  border: 1px solid #EF009B;
+.line-top {
+  border-top: 0.1px solid #EF009B;
+  padding-top: 1rem;
   width: 90vw;
 }
 

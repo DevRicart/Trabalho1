@@ -5,10 +5,16 @@ class MobileNavbar {
     this.navLinks = document.querySelectorAll(navLinks);
     this.line1 = document.querySelector(line1);
     this.line3 = document.querySelector(line3);
+    this.out = document.body.childNodes;
     this.activeClass = "active";
 
     this.handleClick = this.handleClick.bind(this);
+    console.log(this.navLinks[0])
+
   }
+
+  // const line1 = document.querySelector('.line1')
+  
 
   animateLinks() {
     this.navLinks.forEach((link, index) => {
@@ -28,6 +34,10 @@ class MobileNavbar {
     this.animateLinks();
   }
 
+  
+
+  
+
   addClickEvent() {
     this.mobileMenu.addEventListener("click", this.handleClick);
   }
@@ -35,9 +45,11 @@ class MobileNavbar {
   init() {
     if (this.mobileMenu) {
       this.addClickEvent();
-    }
+    } 
     return this;
   }
+
+
 }
 
 const mobileNavbar = new MobileNavbar(
@@ -48,6 +60,24 @@ const mobileNavbar = new MobileNavbar(
   ".line3",
 );
 mobileNavbar.init();
+// Test
+// const links = document.querySelectorAll('.nav-list a'); 
+//       links.forEach(function(link) {
+//         link.addEventListener('click', function() {
+//           const menu = document.querySelector('.nav-list')
+//           const mobileMenu = document.querySelector('.mobile-menu')
+//           const line1 = document.querySelector('.line1')
+//           const line3 = document.querySelector('.line3')
+//           const navLink = document.querySelector('.nav-link')
+//           if(menu.classList.contains('active')) {
+//             menu.classList.toggle('active')
+//             mobileMenu.classList.toggle('active')
+//             line1.classList.toggle('active')
+//             line3.classList.toggle('active')
+//             navLink.classList.toggle('active')
+//           }
+//         });
+//       });
 
 // ==================== Banner Swiper ====================
 

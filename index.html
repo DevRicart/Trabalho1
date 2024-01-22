@@ -27,17 +27,17 @@
         <div class="line3"></div>
       </div>
       <img src="./Assets/Images/logo.png" alt="">
-      <ul class="nav-list">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Comprar</a></li>
-        <li><a href="#">Encarte</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Inscrever-se</a></li>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#comprar">Comprar</a></li>
+        <li><a href="#encarte">Encarte</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#inscrever">Inscrever-se</a></li>
       </ul>
     </nav>
     <div>-</div>
     <!-- ==================== BANNER ==================== -->
-    <section class="banner__section swiper mySwiper" id="INICIO">
+    <section class="banner__section swiper mySwiper" id="inicio">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="./Assets/Images/banner1.png" alt=""></div>
         <div class="swiper-slide"><img src="./Assets/Images/banner2.png" alt=""></div>
@@ -50,27 +50,27 @@
   </header>
   <main>
     <!-- ==================== Shopping ==================== -->
-    <section class="shopping__section">
+    <section class="shopping__section" id="comprar">
       <h1>ONDE VOCÊ PREFERE COMPRAR?</h1>
       <div class="shoppings">
         <div class="shopping online">
           <img src="./Assets/Images/shopping-online.png" alt="">
           <h3>ONLINE</h3>
           <p>Faça suas compras online <br> em nossas loja virtual!</p>
-          <div><a href="">COMPRAR</a></div>
+          <a href="">COMPRAR</a>
           
         </div>
         <div class="shopping in-person">
           <img src="./Assets/Images/shopping-inPerson.png" alt="">
           <h3>PRESENCIALMENTE</h3>
           <p>Conheça nossas unidades e <br> horários de funcionamento!</p>
-          <div><a href="">CONHECER</a></div>
+          <a href="">CONHECER</a>
         </div>
       </div>
     </section>
 
     <!-- ==================== Encarte ==================== -->
-    <section class="encarte__section">
+    <section class="encarte__section" id="encarte">
      
       <h1 class="section__title">ENCARTE LOJA ONLINE</h1>
       <div class="swiper card__container">
@@ -107,6 +107,10 @@
                     <p class="card__description">
                        COD. 47903
                     </p>
+                    <div class="card__buy">
+                     <span>R$ 39,90</span>
+                     <a href="">COMPRAR</a>
+                    </div>
 
                  </div>
               </article>
@@ -122,6 +126,10 @@
                     <p class="card__description">
                        COD. 47903
                     </p>
+                    <div class="card__buy">
+                     <span>R$ 39,90</span>
+                     <a href="">COMPRAR</a>
+                    </div>
 
                  </div>
               </article>
@@ -137,6 +145,10 @@
                     <p class="card__description">
                        COD. 47903
                     </p>
+                    <div class="card__buy">
+                     <span>R$ 39,90</span>
+                     <a href="">COMPRAR</a>
+                    </div>
 
                  </div>
               </article>
@@ -152,6 +164,10 @@
                     <p class="card__description">
                        COD. 47903
                     </p>
+                    <div class="card__buy">
+                     <span>R$ 39,90</span>
+                     <a href="">COMPRAR</a>
+                    </div>
 
                  </div>
               </article>
@@ -167,6 +183,10 @@
                     <p class="card__description">
                        COD. 47903
                     </p>
+                    <div class="card__buy">
+                     <span>R$ 39,90</span>
+                     <a href="">COMPRAR</a>
+                    </div>
 
                  </div>
               </article>
@@ -182,6 +202,10 @@
                     <p class="card__description">
                        COD. 47903
                     </p>
+                    <div class="card__buy">
+                     <span>R$ 39,90</span>
+                     <a href="">COMPRAR</a>
+                    </div>
 
                  </div>
               </article>
@@ -197,6 +221,10 @@
                     <p class="card__description">
                        COD. 47903
                     </p>
+                    <div class="card__buy">
+                     <span>R$ 39,90</span>
+                     <a href="">COMPRAR</a>
+                    </div>
 
                  </div>
               </article>
@@ -281,8 +309,8 @@
        </div>
     </section>
 
-    <!-- ==================== TRADE ==================== -->
-    <section class="subscribe__section">
+    <!-- ==================== SUBSCRIBE ==================== -->
+    <section class="subscribe__section" id="inscrever">
       <div class="titles">
          <h1 class="principal-title">INSCREVA-SE E RECEBA</h1>
          <h1 class="secondary-title">NOVIDADES EXCLUSIVAS!</h1>
@@ -296,8 +324,9 @@
       
     </section>
   </main>
+    <!-- ==================== FOOTER ==================== -->
   <footer>
-   <section class="section__footer">
+   <section class="section__footer" id="contato">
       <div class="footer__top">
          <div class="contact">
             <h1 class="section__title">CONTATO</h1>
@@ -331,9 +360,7 @@
          </div>
       </div>
       <div class="footer__bot">
-         <div class="stick">
-         </div>
-         <p>COPYRIGHT 2024 © - atacadão pavunense - TODOS OS DIREITOS RESERVADOS</p>
+         <p class="line-top">COPYRIGHT 2024 © - atacadão pavunense - TODOS OS DIREITOS RESERVADOS</p>
          <p>desenvolvido por Ricardo Gonçalves</p>
       </div>
       
