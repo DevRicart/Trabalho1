@@ -167,8 +167,10 @@ nav {
 /*==================== MAIN ====================*/
 /*==================== SHOPPING ====================*/
 .shopping__section {
-  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
+  background-color: #FFEFFF;
 }
 
 .shopping__section h1 {
@@ -242,7 +244,6 @@ nav {
 .encarte__section {
   text-align: center;
   background: linear-gradient(#08A8F0, #08A8F0, #08A8F0, #08A9F0, #08AAF1, #08ABF1, #08ABF1, #08ACF1, #09ADF2, #09AEF2, #09AFF2, #09B0F2, #09B1F3, #09B1F3, #09B2F3, #09B3F3, #09B4F4, #09B5F4, #09B6F4, #09B6F4, #0AB7F5, #0AB8F5, #0AB9F5, #0ABAF5, #0ABBF6, #0ABCF6, #0ABCF6, #0ABDF6, #0ABEF7, #0ABFF7, #0AC0F7, #0AC1F7, #0BC1F8, #0BC2F8, #0BC3F8, #0BC4F8, #0BC5F9, #0BC6F9, #0BC7F9, #0BC7F9, #0BC8FA, #0BC9FA, #0BCAFA, #0BCBFA, #0CCCFB, #0CCCFB, #0CCDFB, #0CCEFB, #0CCFFC, #0CD0FC, #0CD1FC, #0CD2FC, #0CD2FD, #0CD3FD, #0CD4FD, #0CD5FD, #0DD6FE, #0DD7FE, #0DD7FE, #0DD8FE, #0DD9FF, #0DDAFF, #0DDAFF);
-  margin-top: 2rem;
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -358,9 +359,10 @@ article:hover .card__name {
 /*==================== TRADE ====================*/
 .trade__section {
   text-align: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   height: fit-content;
-  margin-bottom: 2rem;
+  background-color: #FFEFFF;
 }
 
 .trade__section .section__title {
@@ -463,6 +465,7 @@ input {
 .email {
   background: none;
   border-radius: .3rem 0 0 .3rem;
+  width: 60vw;
 }
 
 .email::placeholder {
@@ -477,8 +480,73 @@ input {
 
 }
 
+/*==================== FOOTER ====================*/
+.section__footer {
+  background-color: #FFEFFF;
+  padding-top: 2rem;
+}
 
+.section__footer h1 {
+  color: #005794;
+}
 
+.footer__top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contact {
+  margin-left: 1rem;
+}
+
+.social-links {
+  margin-top: 1.4rem;
+}
+
+.social-links ul {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link img {
+  width: 30px;
+}
+
+.right-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-lateral img {
+  width: 60px;
+}
+
+.right-lateral h4 {
+  font-size: .5rem;
+  color: #005794;
+  margin-bottom: 6px;
+}
+
+.right-lateral a {
+  font-family: 'Bebas';
+  background-color: #EF009B;
+  font-size: 1rem;
+  padding: .3rem;
+  border-radius: .3rem;
+}
+
+.footer__bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.stick {
+  border: 1px solid #EF009B;
+  width: 90vw;
+}
 
 
 
